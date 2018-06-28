@@ -19,8 +19,6 @@ setInterval(() => {
   document
     .querySelectorAll('div[role=gridcell] div > span > span > html-blob')
     .forEach(e => {
-      if (e.textContent.endsWith('?')) {
-        markTentative(e)
-      }
+      if (e.textContent.endsWith('?')) markTentative(e)
     })
 }, 1000)
