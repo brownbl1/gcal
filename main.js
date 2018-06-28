@@ -8,11 +8,9 @@ const markTentative = e => {
     el.style.backgroundColor ||
     el.firstElementChild.firstElementChild.style.borderColor
 
-  const complement = tinycolor(color)
+  e.style.color = tinycolor(color)
     .complement()
     .toHexString()
-
-  e.style.color = complement
 }
 
 setInterval(() => {
