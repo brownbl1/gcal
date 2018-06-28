@@ -1,0 +1,18 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+
+  "content_scripts": [
+    {
+      "js": ["tinycolor.js", "main.js"],
+      "matches": [
+        "https://calendar.google.com/*",
+        "https://www.calendar.google.com/*"
+      ]
+    }
+  ],
+  "description": "Google Calendar tweaks.",
+  "name": "Calendar Tweaks",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "content_security_policy": "default-src 'self'"
+}
